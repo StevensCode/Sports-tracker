@@ -1,0 +1,35 @@
+{
+    "name": "Sports Tracker",
+    "description": "A way to generate and track player position data",
+    "authors": [
+        {
+            "name": "Austin Stevens",
+            "email": "austinstevens99@hotmail.com"
+        },
+        {
+            "name": "Chris Jarvis",
+            "email": "chris.jarvs@gmail.com"
+        }
+    ],
+    "config": {
+        "secure-http": false
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://composer/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"SportsTracker\\": "src"}
+    },
+    "require": {
+        "ql/mcp-panthor": "~3.0",
+        "ql/panthor-plugins": "~2.0",
+        "twig/twig": "~1.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "~0.9",
+        "phpunit/phpunit": "~5.0"
+    }
+}
